@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>freecodecamp survey form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form">
+      <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required/></label>
+      <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your Email" required/></label>
+      <label id="number-label">Age: <input type="number" id="number" placeholder="Age" min="10" max="90" required/></label>
+      <label>Which option best describes your current role?</label>
+      <select id="dropdown">
+        <option value="">select an option</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Part Time Job</option>
+      </select>
+      <label>Would you recommend us to a friend?</label>
+      <label><input type="radio" class="inline" name="radio" value="definitly"/>Definitly</label>
+      <label><input type="radio" class="inline" name="radio" value="maybe"/>Maybe</label>
+      <label><input type="radio" class="inline" name="radio" value="no" />No</label>
+      <label>What would you like to see improved?</label>
+      <label><input type="checkbox" class="inline" value="front-end"/>Front-end Projects</label>
+      <label><input type="checkbox" class="inline" value="back-end"/>Back-end Projects</label>
+      <label><input type="checkbox" class="inline" value="machine-learning"/>Machine Learning</label>
+      <label><input type="checkbox" class="inline" value="artificial-intelligence"/>Artificial Intelligence</label>
+      <label>Any comments or suggestions?<textarea rows="4" cols="30" placeholder="Enter your commment here..."></textarea></label>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
